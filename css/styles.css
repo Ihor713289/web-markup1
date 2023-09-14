@@ -1,0 +1,20 @@
+.app {
+    display: flex;
+    flex-flow: column;
+}
+
+.header {
+    height: 20vh;
+    background-color: grey;
+}
+
+.body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.header-title {
+    font-size: large;
+    color: black;
+}
