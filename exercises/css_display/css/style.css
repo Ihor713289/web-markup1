@@ -1,0 +1,16 @@
+.hello-world {
+  color: magenta;
+  font-size: 24px;
+}
+
+.inline-paragraphs > p {
+  display: inline;
+}
+
+.block-paragraphs > p {
+  display: block;
+}
+
+.inline-block-paragraphs > p {
+  display: inline-block;
+}

@@ -1,0 +1,17 @@
+.box {
+  border: 32px solid grey;
+  margin: 40px;
+}
+
+.box > section {
+  border: 5px solid black;
+  background-color: pink;
+  margin: 0px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.box > section p {
+    display: block;
+}
