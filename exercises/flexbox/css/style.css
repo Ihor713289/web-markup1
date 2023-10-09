@@ -1,0 +1,62 @@
+.hello-world {
+  color: magenta;
+  font-size: 24px;
+}
+
+.box {
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+}
+
+.left {
+  background-color: grey;
+  flex-grow: 1;
+}
+
+.center {
+  flex-grow: 2;
+  background-color: orange;
+}
+
+.right {
+  background-color: blueviolet;
+  flex-grow: 1;
+}
+
+section {
+  display: flex;
+  flex-grow: 1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer, header {
+  min-height: 60px;
+}
+
+header {
+  background-color: aquamarine;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: palevioletred;
+}
+
+.copyright {
+  margin-top: 25px;
+  margin-left: 40px;
+}
