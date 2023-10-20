@@ -1,20 +1,283 @@
-.app {
+body {
     display: flex;
     flex-flow: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
 }
 
-.header {
-    height: 20vh;
-    background-color: grey;
-}
-
-.body {
+footer {
+    flex-grow: 1;
+    background-color: #C5D86D;
+    min-height: 60px;
     display: flex;
-    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    flex-grow: 1;
+    display: flex;
+    background-color: #C5D86D;
+    height: 100px;
+    align-items: center;
+    gap: 100px;
+    border-bottom: 1px solid black;
+}
+
+nav {
+    width: 80%;
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navigation-list > li {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.navigation-list > li:hover {
+    cursor: pointer;
+    color: #838383;
+}
+
+.contact-details {
+    margin-right: 12px;
+}
+
+.contact-details > img {
+    margin-right: 12px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.selected-title {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.contact-us {
+    margin-right: 20px;
+    font-weight: bolder;
+    display: flex;
     justify-content: center;
 }
 
-.header-title {
-    font-size: large;
-    color: black;
+.contact-us img {
+    height: 25px;
 }
+
+.copyright {
+    margin-left: 20px;
+}
+
+main {
+    flex-grow: 10;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #C5D86Da1, #C5D86D41 );
+}
+
+.home-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    border-bottom: 1px solid black;
+}
+
+.home-picture:hover {
+    cursor: default;
+}
+
+.home-picture-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    box-sizing: border-box;
+}
+
+.image-text-centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+}
+
+.image-text-centered-bottom {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    width: 90%;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5rem;
+}
+
+.article-preview {
+    display: flex;
+    flex-direction: row;
+    background: #FFCA9C;
+    gap: 1rem;
+    width: 600px;
+    border: 1px solid black;
+}
+
+.article-preview-picture {
+    width: 40%;
+    height: 90%;
+    margin-left: 1rem;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.article-preview-picture:hover {
+    cursor: default;
+}
+
+.article-description {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    font-size: large;
+    justify-content: space-between;
+}
+
+.view-button {
+    align-self: flex-end;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    color: #000;
+    background: linear-gradient(180deg, #D7FFAB 0%, #D7FFAB 100%);
+    background-origin: border-box;
+    user-select: none;
+}
+
+.view-button:hover {
+    cursor: pointer;
+}
+
+.article-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 1200px;
+    border: 1px solid black;
+    align-items: center;
+    background: #EFD6AC;
+    margin-bottom: 5rem;
+}
+
+.article-picture {
+    width: 40%;
+    height: 90%;
+    margin-left: 1rem;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    font-size: large;
+    justify-content: space-evenly;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.facts-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #F97021;
+}
+
+.trip-facts > li {
+    font-size: large;
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+}
+
+.contact-header {
+    font-size: xx-large;
+    font-weight: bold;
+    background: #41857C;
+    color: white;
+}
+
+.contact-form {
+    display: grid;
+    padding: 0 50px 0 50px;
+    background: darkgrey;
+    grid-template-areas:
+    "gender gender"
+    "firstname lastname"
+    "email email"
+    "number number"
+    "submit submit";
+}
+
+
+/* Desktop */
+/*@media only screen and (min-width: 768px) {*/
+
+/*}*/
+
+/*@media only screen and (max-width: 480px) {*/
+/*    header {*/
+/*        display: flex;*/
+/*        background-color: #C5D86D;*/
+/*        height: 100px;*/
+/*        align-items: center;*/
+/*    }*/
+
+/*    ul {*/
+/*        display: inline;*/
+/*    }*/
+
+/*    ul > li {*/
+/*        list-style-type: none;*/
+/*        font-weight: bold;*/
+/*        font-size: x-large;*/
+/*    }*/
+/*}*/
+
