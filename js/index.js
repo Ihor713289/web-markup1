@@ -240,6 +240,7 @@ class Router {
         if (!index) {
             throw new Error('No route was found!')
         }
+        history.pushState()
     }
 
 
