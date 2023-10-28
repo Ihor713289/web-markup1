@@ -77,13 +77,15 @@ a:active {
     margin-left: 15px;
     color: white;
     font-weight: bold;
-    float: right;
     font-size: 22px;
     line-height: 20px;
     cursor: pointer;
 }
 
 #cookies-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
     top: 90%;
     left: 20%;
