@@ -16,6 +16,8 @@ class CustomHeader extends HTMLElement {
         const header = document.createElement('header')
         const menuIcon = document.createElement('img')
         menuIcon.setAttribute('src', './images/menu.svg')
+        menuIcon.setAttribute('alt', 'Menu')
+        menuIcon.setAttribute('title', 'Menu')
         menuIcon.className = 'menu-icon'
         menuIcon.onclick = (event) => {
             const drawer = document.getElementById('navigation-drawer')
@@ -23,6 +25,8 @@ class CustomHeader extends HTMLElement {
         }
         const img = document.createElement('img')
         img.setAttribute('src', './images/Logo.svg')
+        img.setAttribute('alt', 'Logo')
+        img.setAttribute('title', 'Home')
         img.className = 'logo'
         img.onclick = (event) => {
             goHome()
@@ -113,7 +117,7 @@ class MainContent extends HTMLElement {
 
     getHomeContent() {
         return `<section class="home-picture-container">
-            <img class="home-picture" src="./images/home-picture.jpg" alt="homepage">
+            <img class="home-picture" src="./images/home-picture.jpg" alt="Bike in the woods homepage picture" title="Bike in a forest">
             <p class="image-text-centered">Welcome to Bike with me</p>
             <p class="image-text-centered-bottom">Discover the Utrecht region's breathtaking beauty and rich cycling heritage with us. Our website offers a diverse range of biking routes to cater to cycling enthusiasts. Explore the charming canals of Utrecht city or embrace the tranquillity of the Dutch countryside. Plan your adventure with detailed route descriptions, maps, and essential information. Connect with our passionate cycling community and make lasting memories while reducing your carbon footprint. Start your Utrecht cycling adventure today!</p>
         </section>
@@ -121,35 +125,35 @@ class MainContent extends HTMLElement {
             <h2>Articles</h2>
             <section class="articles-grid">
                 <article class="article-preview">
-                        <img class="article-preview-picture" src="./images/first/forest.jpg" alt="Forest">
+                        <img class="article-preview-picture" src="./images/first/forest.jpg" alt="Forest" title="Nieuw Wulven">
                         <section class="article-description">
                             <h3>Forest adventure</h3>
-                            <p>Embark on a captivating biking journey through the enchanting Nieuw Wulven Forest. This pristine natural oasis, located in the heart of the Utrecht region, offers a serene and invigorating experience for cyclists of all levels.</p>
-                            <button class="view-button" onclick="Router.navigateById(2)">Read more</button>
+                            <p><em>Embark</em> on a captivating biking journey through the enchanting Nieuw Wulven Forest. This pristine natural oasis, located in the heart of the Utrecht region, offers a serene and invigorating experience for cyclists of all levels.</p>
+                            <button class="view-button" onclick="Router.navigateById(2)"><strong>Read more</strong></button>
                         </section>
                 </article>
                 <article class="article-preview">
-                    <img class="article-preview-picture" src="./images/road.jpg" alt="Road">
+                    <img class="article-preview-picture" src="./images/road.jpg" alt="Road" title="Road to Bunnik">
                     <section class="article-description">
                         <h3>Historical ride</h3>
-                        <p>This biking route seamlessly combines natural beauty, history, relaxation, and the whimsical joy of DuckCity. Revel in the serene riverside views, explore charming villages, savor refreshments at Theehuis Rhijnauwen, and create unforgettable memories with at DuckCity.</p>
-                        <button class="view-button" onclick="Router.navigateById(3)">Read more</button>
+                        <p>This <em>biking route</em> seamlessly combines natural beauty, history, relaxation, and the whimsical joy of DuckCity. Revel in the serene riverside views, explore charming villages, savor refreshments at Theehuis Rhijnauwen, and create unforgettable memories with at DuckCity.</p>
+                        <button class="view-button" onclick="Router.navigateById(3)"><strong>Read more</strong></button>
                     </section>
                 </article>
                 <article class="article-preview">
-                    <img class="article-preview-picture" src="./images/utrecht.jpg" alt="Utrecht channels">
+                    <img class="article-preview-picture" src="./images/utrecht.jpg" alt="Utrecht channels" title="Utrecht city center">
                     <section class="article-description">
                         <h3>Bunnik to Utrecht Urban Escape</h3>
-                        <p>Embark on a captivating biking journey from the charming Bunnik to the vibrant heart of Utrecht.</p>
-                        <button class="view-button" onclick="Router.navigateById(4)">Read more</button>
+                        <p><em>Embark</em> on a captivating biking journey from the charming Bunnik to the vibrant heart of Utrecht.</p>
+                        <button class="view-button" onclick="Router.navigateById(4)"><strong>Read more</strong></button>
                     </section>
                 </article>
                 <article class="article-preview">
-                    <img class="article-preview-picture" src="./images/bridge.jpg" alt="Bridge">
+                    <img class="article-preview-picture" src="./images/bridge.jpg" alt="Bridge" title="Bridge across a highway">
                     <section class="article-description">
                         <h3>Utrecht to Houten</h3>
-                        <p>Embark on a delightful biking journey from the heart of Utrecht to the charming town of Houten, weaving through the scenic neighborhood of Utrecht Lunetten. This route combines the vibrant energy of Utrecht with the tranquil charm of the countryside, offering a cycling experience that captures the essence of the region.</p>
-                        <button class="view-button" onclick="Router.navigateById(5)">Read more</button>
+                        <p><em>Embark</em> on a delightful biking journey from the heart of Utrecht to the charming town of Houten, weaving through the scenic neighborhood of Utrecht Lunetten. This route combines the vibrant energy of Utrecht with the tranquil charm of the countryside, offering a cycling experience that captures the essence of the region.</p>
+                        <button class="view-button" onclick="Router.navigateById(5)"><strong>Read more</strong></button>
                     </section>
                 </article>
             </section>
@@ -199,6 +203,7 @@ class MainContent extends HTMLElement {
             image.className = 'article-picture'
             image.setAttribute('src', section.imagePath)
             image.setAttribute('alt', section.alt)
+            image.setAttribute('title', section.title)
             contentSection.appendChild(image)
 
 
@@ -232,6 +237,7 @@ class MainContent extends HTMLElement {
         return `<article class="contact-page">
           <section class="contact-header">User service</section>
           <form class="contact-form">
+              <legend><strong>Contact form:</strong></legend>
               <section class="gender-input">
                 <section>
                     <label>*Gender:</label>
@@ -254,28 +260,23 @@ class MainContent extends HTMLElement {
               <section class="name-input">
                   <section>
                     <label for="firstname" class="input-label">*First name</label>
-                    <br/>
                     <input class="text-input" type="text" name="firstname" id="firstname"/>
                   </section>
                   <section>
                     <label for="lastname" class="input-label">*Last name</label>
-                    <br/>
                     <input class="text-input" type="text" name="lastname" id="lastname"/>
                   </section>
               </section>
               <section>
                     <label class="input-label" for="email">*Email</label>
-                    <br/>
                     <input class="email-input" type="email" id="email" name="email"/>
               </section>
               <section>
                     <label class="input-label" for="mobile">Mobile number</label>
-                    <br/>
-                    <input class="email-input" type="number" id="mobile" name="mobile"/>
+                    <input class="email-input" type="text" id="mobile" name="mobile"/>
               </section>
               <section>
                   <label class="input-label" for="reason">Reason to contact us</label>
-                  <br/>
                   <input class="reason-input" type="text" name="reason" id="reason"/>
               </section>
               <section>
@@ -433,9 +434,9 @@ class CustomFooter extends HTMLElement {
         const footer = document.createElement('footer')
         footer.innerHTML = `<strong class="copyright">&copy; Copyright 2023</strong>
         <section class="contact-details">
-            <img src="./images/mail.svg" alt="mail">
-            <img src="./images/phone.svg" alt="phone">
-            <img src="./images/instagram.svg" alt="instagram">
+            <img src="./images/mail.svg" alt="mail" title="Mail us">
+            <img src="./images/phone.svg" alt="phone" title="Call us">
+            <img src="./images/instagram.svg" alt="instagram" title="Find us on instagram">
         </section>`
         body.appendChild(footer)
     }
@@ -452,9 +453,7 @@ class NavigationDrawer extends HTMLElement {
         const navigationContent = document.createElement('section')
         navigationContent.className = 'navigation-content'
         const drawerHeader = this.getDrawerHeader()
-        const divider = document.createElement('hr')
         navigationContent.appendChild(drawerHeader)
-        navigationContent.appendChild(divider)
         const nav = document.createElement('nav')
         nav.className = 'drawer-navigation'
         const ul = document.createElement('drawer-navigation-list')
@@ -477,13 +476,11 @@ class NavigationDrawer extends HTMLElement {
         navigationContent.appendChild(nav)
         const contactUs = document.createElement('section')
         contactUs.className = 'contact-us-drawer'
-        const contactDivider = document.createElement('hr')
         const span = document.createElement('span')
         span.innerText = 'Contact us'
         span.onclick = (event) => {
             Router.navigateById(6)
         }
-        contactUs.appendChild(contactDivider)
         contactUs.appendChild(span)
         navigationContent.appendChild(contactUs)
         const overlay = document.createElement('section')
@@ -502,9 +499,11 @@ class NavigationDrawer extends HTMLElement {
         const logo = document.createElement('img')
         logo.setAttribute('src', './images/Logo.svg')
         logo.setAttribute('alt', 'Logo')
+        logo.setAttribute('title', 'Logo')
         const menu = document.createElement('img')
         menu.setAttribute('src', './images/menu.svg')
         menu.setAttribute('alt', 'Menu')
+        menu.setAttribute('title', 'Menu')
         menu.className = 'menu-icon'
         menu.onclick = (event) => {
             closeDrawer()
@@ -556,6 +555,7 @@ class Router {
         if (header && header.getAttribute('selected-page') !== route.id.toString()) {
             header.setAttribute('selected-page', route.id)
         }
+        closeDrawer()
         const mainContent = document.getElementById('main-content')
         mainContent?.setAttribute('page-id', route.id)
     }
@@ -604,4 +604,9 @@ function goHome() {
 function closeDrawer() {
     const drawer = document.getElementById('navigation-drawer')
     drawer.className = 'drawer-closed'
+}
+
+function closeCookiesMessage() {
+    const banner = document.getElementById('cookies-banner')
+    banner.style.display = 'none'
 }
