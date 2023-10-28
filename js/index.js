@@ -91,7 +91,6 @@ class MainContent extends HTMLElement {
     }
 
     getHtml() {
-        console.log(this.getAttribute('page-id'))
         switch (this.getAttribute('page-id')) {
             case '1':
                 return this.getHomeContent()
@@ -552,8 +551,6 @@ class Router {
         if (!route) {
             return;
         }
-        console.log('here')
-        // history.pushState({ pageId: route.id }, '', route.name)
         window.location.hash = '#' + route.name
         const header = document.getElementById('custom-header')
         if (header && header.getAttribute('selected-page') !== route.id.toString()) {
