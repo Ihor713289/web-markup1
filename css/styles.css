@@ -223,7 +223,7 @@ a:active {
         flex-direction: row;
         background: #FFCA9C;
         gap: 1rem;
-        width: 600px;
+        width: 40vw;
         border: 1px solid black;
     }
 
@@ -269,7 +269,7 @@ a:active {
         flex-direction: column;
         justify-content: space-between;
         gap: 2rem;
-        width: 1200px;
+        width: 70vw;
         border: 1px solid black;
         align-items: center;
         background: #EFD6AC;
@@ -325,12 +325,14 @@ a:active {
         color: white;
         text-align: center;
         width: 30vw;
+        min-width: 450px;
         margin-top: 30px;
         padding: 30px 0 30px 0;
     }
 
     .contact-form {
         width: 30vw;
+        min-width: 450px;
         display: flex;
         flex-direction: column;
         align-items: center;
