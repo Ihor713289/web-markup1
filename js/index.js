@@ -15,7 +15,7 @@ class CustomHeader extends HTMLElement {
         const body = document.getElementById('app')
         const header = document.createElement('header')
         const menuIcon = document.createElement('img')
-        menuIcon.setAttribute('src', './images/menu.svg')
+        menuIcon.setAttribute('src', './img/menu.svg')
         menuIcon.setAttribute('alt', 'Menu')
         menuIcon.setAttribute('title', 'Menu')
         menuIcon.className = 'menu-icon'
@@ -24,7 +24,7 @@ class CustomHeader extends HTMLElement {
             drawer.className = 'drawer-opened'
         }
         const img = document.createElement('img')
-        img.setAttribute('src', './images/Logo.svg')
+        img.setAttribute('src', './img/Logo.svg')
         img.setAttribute('alt', 'Logo')
         img.setAttribute('title', 'Home')
         img.className = 'logo'
@@ -117,7 +117,7 @@ class MainContent extends HTMLElement {
 
     getHomeContent() {
         return `<section class="home-picture-container">
-            <img class="home-picture" src="./images/home-picture.jpg" alt="Bike in the woods homepage picture" title="Bike in a forest">
+            <img class="home-picture" src="./img/home-picture.jpg" alt="Bike in the woods homepage picture" title="Bike in a forest">
             <p class="image-text-centered">Welcome to Bike with me</p>
             <p class="image-text-centered-bottom">Discover the Utrecht region's breathtaking beauty and rich cycling heritage with us. Our website offers a diverse range of biking routes to cater to cycling enthusiasts. Explore the charming canals of Utrecht city or embrace the tranquillity of the Dutch countryside. Plan your adventure with detailed route descriptions, maps, and essential information. Connect with our passionate cycling community and make lasting memories while reducing your carbon footprint. Start your Utrecht cycling adventure today!</p>
         </section>
@@ -125,7 +125,7 @@ class MainContent extends HTMLElement {
             <h2>Articles</h2>
             <section class="articles-grid">
                 <article class="article-preview">
-                        <img class="article-preview-picture" src="./images/first/forest.jpg" alt="Forest" title="Nieuw Wulven">
+                        <img class="article-preview-picture" src="./img/first/forest.jpg" alt="Forest" title="Nieuw Wulven">
                         <section class="article-description">
                             <h3>Forest adventure</h3>
                             <p><em>Embark</em> on a captivating biking journey through the enchanting Nieuw Wulven Forest. This pristine natural oasis, located in the heart of the Utrecht region, offers a serene and invigorating experience for cyclists of all levels.</p>
@@ -133,7 +133,7 @@ class MainContent extends HTMLElement {
                         </section>
                 </article>
                 <article class="article-preview">
-                    <img class="article-preview-picture" src="./images/road.jpg" alt="Road" title="Road to Bunnik">
+                    <img class="article-preview-picture" src="./img/road.jpg" alt="Road" title="Road to Bunnik">
                     <section class="article-description">
                         <h3>Historical ride</h3>
                         <p>This <em>biking route</em> seamlessly combines natural beauty, history, relaxation, and the whimsical joy of DuckCity. Revel in the serene riverside views, explore charming villages, savor refreshments at Theehuis Rhijnauwen, and create unforgettable memories with at DuckCity.</p>
@@ -141,7 +141,7 @@ class MainContent extends HTMLElement {
                     </section>
                 </article>
                 <article class="article-preview">
-                    <img class="article-preview-picture" src="./images/utrecht.jpg" alt="Utrecht channels" title="Utrecht city center">
+                    <img class="article-preview-picture" src="./img/utrecht.jpg" alt="Utrecht channels" title="Utrecht city center">
                     <section class="article-description">
                         <h3>Bunnik to Utrecht Urban Escape</h3>
                         <p><em>Embark</em> on a captivating biking journey from the charming Bunnik to the vibrant heart of Utrecht.</p>
@@ -149,7 +149,7 @@ class MainContent extends HTMLElement {
                     </section>
                 </article>
                 <article class="article-preview">
-                    <img class="article-preview-picture" src="./images/bridge.jpg" alt="Bridge" title="Bridge across a highway">
+                    <img class="article-preview-picture" src="./img/bridge.jpg" alt="Bridge" title="Bridge across a highway">
                     <section class="article-description">
                         <h3>Utrecht to Houten</h3>
                         <p><em>Embark</em> on a delightful biking journey from the heart of Utrecht to the charming town of Houten, weaving through the scenic neighborhood of Utrecht Lunetten. This route combines the vibrant energy of Utrecht with the tranquil charm of the countryside, offering a cycling experience that captures the essence of the region.</p>
@@ -300,19 +300,19 @@ class MainContent extends HTMLElement {
             sections: [
                 {
                     title: 'Forest magic',
-                    imagePath: './images/first/forest.jpg',
+                    imagePath: './img/first/forest.jpg',
                     content: 'Embark on a captivating biking journey through the enchanting Nieuw Wulven Forest. This pristine natural oasis, located in the heart of the Utrecht region, offers a serene and invigorating experience for cyclists of all levels.',
                     alt: 'Forest'
                 },
                 {
                     title: 'Tranquil Woodland Trails',
-                    imagePath: './images/first/road.jpg',
+                    imagePath: './img/first/road.jpg',
                     content: 'Wind your way through a labyrinth of peaceful woodland trails, surrounded by towering trees and the soothing sounds of nature. The Nieuw Wulven Forest is a haven for those seeking a serene escape from the hustle and bustle of daily life.',
                     alt: 'Road'
                 },
                 {
                     title: 'Family-Friendly trip',
-                    imagePath: './images/first/field.jpg',
+                    imagePath: './img/first/field.jpg',
                     content: 'This route is perfect for families, offering a gentle, mostly flat terrain that\'s suitable for riders of all ages. It\'s an ideal outing for parents and children to enjoy together. Learn more: <a href="https://www.staatsbosbeheer.nl/wat-we-doen/werk-in-uitvoering/kromme-rijn-ontwikkeling-nieuw-wulven" target="_blank">Developing Nieuw Wulven<a>',
                     alt: 'Field'
                 }
@@ -332,19 +332,19 @@ class MainContent extends HTMLElement {
             sections: [
                 {
                     title: 'Joyful ride',
-                    imagePath: './images/second/duckcity.jpg',
+                    imagePath: './img/second/duckcity.jpg',
                     content: 'This biking route seamlessly combines natural beauty, history, relaxation, and the whimsical joy of DuckCity. Revel in the serene riverside views, explore charming villages, savor refreshments at Theehuis Rhijnauwen, and create unforgettable memories with at DuckCity.',
                     alt: 'DuckCity parking lot'
                 },
                 {
                     title: 'Riverside Path',
-                    imagePath: './images/road.jpg',
+                    imagePath: './img/road.jpg',
                     content: 'Begin your ride along the peaceful Kromme Rijn river, where the soothing waters and lush greenery create a picturesque setting for your adventure.Pedal through the historic village of Rhijnauwen, known for its enchanting charm and traditional Dutch architecture.',
                     alt: 'Road to the Bunnik'
                 },
                 {
                     title: 'Unforgettable experience',
-                    imagePath: './images/second/river.jpg',
+                    imagePath: './img/second/river.jpg',
                     content: 'Embark on a captivating biking journey through the enchanting Nieuw Wulven Forest. This pristine natural oasis, located in the heart of the Utrecht region, offers a serene and invigorating experience for cyclists of all levels. Learn more: <a href="https://www.duckcityfun.nl/" target="_blank">DuckCity</a>, <a href="https://theehuisrhijnauwen.nl/" target="_blank">Theehuis Rhynauwen</a>.',
                     alt: 'Bridge in Bunnik'
                 }
@@ -364,20 +364,20 @@ class MainContent extends HTMLElement {
             sections: [
                 {
                     title: 'Back to Urban',
-                    imagePath: './images/third/road.jpg',
+                    imagePath: './img/third/road.jpg',
                     content: 'Embark on a captivating biking journey from the charming Bunnik to the vibrant heart of Utrecht. This picturesque route seamlessly transitions from serene woodland to the bustling urban landscape, offering a unique and memorable cycling experience.',
                     alt: 'Beautiful forest road'
                 },
                 {
                     title: 'Woodland Magic',
-                    imagePath: './images/third/lake.jpg',
+                    imagePath: './img/third/lake.jpg',
                     content: 'Begin your ride amidst the enchanting forest trails near Bunnik, where the whispering leaves and dappled sunlight create a fairytale-like ambiance.\n' +
                         'Follow the scenic path along the tranquil Kromme Rijn river, enjoying the soothing views of the water and the abundant greenery that lines the banks.',
                     alt: 'Woodland lake'
                 },
                 {
                     title: 'Utrecht\'s Vibrant Center',
-                    imagePath: './images/utrecht.jpg',
+                    imagePath: './img/utrecht.jpg',
                     content: 'Your route culminates in Utrecht\'s city center, where you\'ll find a bustling atmosphere, charming canals, shops, cafes, and the city\'s rich cultural heritage waiting to be explored. Discover more about <a href="https://www.utrecht.nl/" target="_blank">Utrecht</a>.',
                     alt: 'Utrecht\'s city center'
                 }
@@ -397,19 +397,19 @@ class MainContent extends HTMLElement {
             sections: [
                 {
                     title: 'A pretty town',
-                    imagePath: './images/bridge.jpg',
+                    imagePath: './img/bridge.jpg',
                     content: 'Embark on a delightful biking journey from the heart of Utrecht to the charming town of Houten, weaving through the scenic neighborhood of Utrecht Lunetten. This route combines the vibrant energy of Utrecht with the tranquil charm of the countryside, offering a cycling experience that captures the essence of the region.',
                     alt: 'Forest'
                 },
                 {
                     title: 'Utrecht\'s Urban Pulse',
-                    imagePath: './images/fourth/bikelane.webp',
+                    imagePath: './img/fourth/bikelane.webp',
                     content: 'Begin your ride in Utrecht, where the city\'s lively atmosphere, historic architecture, and bustling streets create a captivating starting point for your adventure. Pedal through the picturesque Lunetten neighborhood, known for its tree-lined streets, green parks, and family-friendly ambiance. It\'s a peaceful respite within the city.',
                     alt: 'Road'
                 },
                 {
                     title: 'Houten\'s Quaint Charm',
-                    imagePath: './images/fourth/houten.jpg',
+                    imagePath: './img/fourth/houten.jpg',
                     content: 'Arrive in Houten, a town famous for its cycling-friendly infrastructure, where you\'ll find charming streets, cozy cafes, and a warm welcome awaiting your arrival. Discover more about charming town of <a href="https://www.houten.nl/" target="_blank">Houten</a>.',
                     alt: 'Field'
                 }
@@ -434,9 +434,9 @@ class CustomFooter extends HTMLElement {
         const footer = document.createElement('footer')
         footer.innerHTML = `<strong class="copyright">&copy; Copyright 2023</strong>
         <section class="contact-details">
-            <img src="./images/mail.svg" alt="mail" title="Mail us">
-            <img src="./images/phone.svg" alt="phone" title="Call us">
-            <img src="./images/instagram.svg" alt="instagram" title="Find us on instagram">
+            <img src="./img/mail.svg" alt="mail" title="Mail us">
+            <img src="./img/phone.svg" alt="phone" title="Call us">
+            <img src="./img/instagram.svg" alt="instagram" title="Find us on instagram">
         </section>`
         body.appendChild(footer)
     }
@@ -497,11 +497,11 @@ class NavigationDrawer extends HTMLElement {
         const drawerHeader = document.createElement('section')
         drawerHeader.className = 'drawer-header'
         const logo = document.createElement('img')
-        logo.setAttribute('src', './images/Logo.svg')
+        logo.setAttribute('src', './img/Logo.svg')
         logo.setAttribute('alt', 'Logo')
         logo.setAttribute('title', 'Logo')
         const menu = document.createElement('img')
-        menu.setAttribute('src', './images/menu.svg')
+        menu.setAttribute('src', './img/menu.svg')
         menu.setAttribute('alt', 'Menu')
         menu.setAttribute('title', 'Menu')
         menu.className = 'menu-icon'

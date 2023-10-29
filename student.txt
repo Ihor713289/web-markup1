@@ -1,0 +1,5 @@
+Student name: Ihor Buriakov
+Student number: 713289
+Student class: IT1B
+GitHub Repository: https://github.com/Ihor713289/web-markup1
+GitHub Pages URL: https://ihor713289.github.io/web-markup1/
