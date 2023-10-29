@@ -761,5 +761,10 @@ a:active {
     .redirect-button:hover {
         cursor: pointer;
     }
+
+    #cookies-banner {
+        height: 4rem;
+        top: 85%;
+    }
 }
 
