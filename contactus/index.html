@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ihor Buriakov - 713289">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="../js/index.js"></script>
+    <link rel="icon" type="image/x-icon" href="../img/Favicon.svg">
+    <title>Bike With Me</title>
+</head>
+<body id="app">
+<header>
+    <img src="../img/menu.svg" alt="Menu" title="Menu" class="menu-icon" onclick="openDrawer()">
+    <a href=".."><img src="../img/Logo.svg" alt="Logo" title="Home" class="logo"></a>
+    <nav>
+        <ul class="navigation-list">
+            <li value="1"><a href="..">Home</a></li>
+            <li value="2"><a href="/article1">Forest adventure</a></li>
+            <li value="3"><a href="/article2">Historical ride</a></li>
+            <li value="4"><a href="/article3">Utrecht urban escape</a></li>
+            <li value="5"><a href="/article4">Utrecht to Houten</a></li>
+            <li value="6" class="selected-title"><a href="/contactus">Contact us</a></li>
+        </ul>
+    </nav>
+</header>
+<aside id="navigation-drawer" class="drawer-closed">
+    <section class="navigation-content">
+        <section class="drawer-header">
+            <img src="../img/Logo.svg" alt="Logo" title="Logo">
+            <img src="../img/menu.svg"
+                 alt="Menu"
+                 title="Menu"
+                 class="menu-icon"
+                 onclick="closeDrawer()"
+            >
+        </section>
+        <nav class="drawer-navigation">
+            <ul class="drawer-navigation-list">
+                <li value="1"><a href="..">Home</a></li>
+                <li value="2"><a href="/article1">Forest adventure</a></li>
+                <li value="3"><a href="/article2">Historical ride</a></li>
+                <li value="4"><a href="/article3">Utrecht urban escape</a></li>
+                <li value="5"><a href="/article4">Utrecht to Houten</a></li>
+            </ul>
+        </nav>
+        <section class="contact-us-drawer"><a href="/contactus" class="selected-title">Contact us</a></section>
+    </section>
+    <section id="overlay"></section>
+</aside>
+<main id="content-container">
+    <article class="contact-page">
+        <section class="contact-header">User service</section>
+        <form class="contact-form" action="../redirect.html">
+            <legend><strong>Contact form:</strong></legend>
+            <section class="gender-input">
+                <section>
+                    <label>*Gender:</label>
+                </section>
+                <section class="gender-options">
+                    <section>
+                        <input type="radio" name="gender" id="male" value="male" checked="">
+                        <label for="male">Male</label>
+                    </section>
+                    <section>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                    </section>
+                    <section>
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="other">Other</label>
+                    </section>
+                </section>
+            </section>
+            <section class="name-input">
+                <section>
+                    <label for="firstname" class="input-label">*First name</label>
+                    <input class="text-input" type="text" name="firstname" id="firstname">
+                </section>
+                <section>
+                    <label for="lastname" class="input-label">*Last name</label>
+                    <input class="text-input" type="text" name="lastname" id="lastname">
+                </section>
+            </section>
+            <section>
+                <label class="input-label" for="email">*Email</label>
+                <input class="email-input" value="email" type="email" id="email" name="email">
+            </section>
+            <section>
+                <label class="input-label" for="mobile">Mobile number</label>
+                <input class="email-input" type="text" id="mobile" name="mobile">
+            </section>
+            <section>
+                <label class="input-label" for="reason">Reason to contact us</label>
+                <input class="reason-input" type="text" name="reason" id="reason">
+            </section>
+            <section>
+                <input class="submit-button" type="submit" value="submit">
+            </section>
+        </form>
+    </article>
+</main>
+<footer><small class="copyright">&copy; Copyright 2023</small>
+    <section class="contact-details">
+        <img src="../img/mail.svg" alt="mail" title="Mail us">
+        <img src="../img/phone.svg" alt="phone" title="Call us">
+        <img src="../img/instagram.svg" alt="instagram" title="Find us on instagram">
+    </section>
+</footer>
+</body>
+</html>

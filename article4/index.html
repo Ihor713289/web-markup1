@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ihor Buriakov - 713289">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="../js/index.js"></script>
+    <link rel="icon" type="image/x-icon" href="../img/Favicon.svg">
+    <title>Bike With Me</title>
+</head>
+<body id="app">
+<header>
+    <img src="../img/menu.svg" alt="Menu" title="Menu" class="menu-icon" onclick="openDrawer()">
+    <a href=".."><img src="../img/Logo.svg" alt="Logo" title="Home" class="logo"></a>
+    <nav>
+        <ul class="navigation-list">
+            <li value="1"><a href="..">Home</a></li>
+            <li value="2"><a href="/article1">Forest adventure</a></li>
+            <li value="3"><a href="/article2">Historical ride</a></li>
+            <li value="4"><a href="/article3">Utrecht urban escape</a></li>
+            <li value="5" class="selected-title"><a href="/article4">Utrecht to Houten</a></li>
+            <li value="6"><a href="/contactus">Contact us</a></li>
+        </ul>
+    </nav>
+</header>
+<aside id="navigation-drawer" class="drawer-closed">
+    <section class="navigation-content">
+        <section class="drawer-header">
+            <img src="../img/Logo.svg" alt="Logo" title="Logo">
+            <img src="../img/menu.svg"
+                 alt="Menu"
+                 title="Menu"
+                 class="menu-icon"
+                 onclick="closeDrawer()"
+            >
+        </section>
+        <nav class="drawer-navigation">
+            <ul class="drawer-navigation-list">
+                <li value="1"><a href="..">Home</a></li>
+                <li value="2"><a href="/article1">Forest adventure</a></li>
+                <li value="3"><a href="/article2">Historical ride</a></li>
+                <li value="4"><a href="/article3">Utrecht urban escape</a></li>
+                <li value="5" class="selected-title"><a href="/article4">Utrecht to Houten</a></li>
+            </ul>
+        </nav>
+        <section class="contact-us-drawer"><a href="/contactus">Contact us</a></section>
+    </section>
+    <section id="overlay"></section>
+</aside>
+<main id="content-container">
+    <article class="content-container"><h1>Utrecht to Houten</h1>
+        <section class="article-section"><h2>A pretty town</h2>
+            <section class="article-content"><img class="article-picture" src="../img/bridge.jpg" alt="Forest"
+                                                  title="A pretty town">
+                <p class="article-text">Embark on a delightful biking journey from the heart of Utrecht to the charming
+                    town of Houten, weaving through the scenic neighborhood of Utrecht Lunetten. This route combines the
+                    vibrant energy of Utrecht with the tranquil charm of the countryside, offering a cycling experience
+                    that captures the essence of the region.</p></section>
+        </section>
+        <section class="article-section"><h2>Utrecht's Urban Pulse</h2>
+            <section class="article-content"><img class="article-picture" src="../img/fourth/bikelane.webp" alt="Road"
+                                                  title="Utrecht's Urban Pulse">
+                <p class="article-text">Begin your ride in Utrecht, where the city's lively atmosphere, historic
+                    architecture, and bustling streets create a captivating starting point for your adventure. Pedal
+                    through the picturesque Lunetten neighborhood, known for its tree-lined streets, green parks, and
+                    family-friendly ambiance. It's a peaceful respite within the city.</p></section>
+        </section>
+        <section class="article-section"><h2>Houten's Quaint Charm</h2>
+            <section class="article-content"><img class="article-picture" src="../img/fourth/houten.jpg" alt="Field"
+                                                  title="Houten's Quaint Charm">
+                <p class="article-text">Arrive in Houten, a town famous for its cycling-friendly infrastructure, where
+                    you'll find charming streets, cozy cafes, and a warm welcome awaiting your arrival. Discover more
+                    about charming town of <a href="https://www.houten.nl/" target="_blank">Houten</a>.</p></section>
+        </section>
+        <section class="facts-section"><h2>Trip facts</h2>
+            <ul class="trip-facts">
+                <li>Difficulty: Easy</li>
+                <li>Distance: Approximately 10 kilometers (6.2 miles)</li>
+                <li>Duration: 45 minutes to 1.5 hours, depending on your pace and stops</li>
+                <li>Terrain: Mostly flat, with well-paved bike paths</li>
+            </ul>
+        </section>
+    </article>
+</main>
+<footer><small class="copyright">&copy; Copyright 2023</small>
+    <section class="contact-details">
+        <img src="../img/mail.svg" alt="mail" title="Mail us">
+        <img src="../img/phone.svg" alt="phone" title="Call us">
+        <img src="../img/instagram.svg" alt="instagram" title="Find us on instagram">
+    </section>
+</footer>
+</body>
+</html>
